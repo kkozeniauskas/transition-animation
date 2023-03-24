@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-family: mukta;
+    text-align: center;
+    margin: 20px;
+}
+.sky{
+    height: 600px;
+    width: 1200px;
+    position: relative;
+    margin-left: 120px;
+    border: 1px solid skyblue;
+    background: url(sky2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    box-shadow: 15px 15px 15px #a1c4fd;
+    animation: sky linear 20s infinite;
+    
+    
+}
+.plane{
+    background-position: 60%;
+    background-size: 40%;
+    margin-top: 300px;
+    margin-right: 200px;
+    animation: mymove linear 20s infinite;
+   
+    
+}
+
+
+@keyframes sky{
+    from{
+        background-position: 1200px;
+    }
+    to{
+        background-position: 0px;
+    }
+}
+
+.phone{
+    background-image: url(phone.png);
+    position: absolute;
+    background-size: cover;
+    /* border: 2px solid black; */
+    width: 500px;
+    height: 900px;
+    margin-left: 450px;
+    cursor: pointer;
+}
+.notif1{
+    background: url(notif1.png);
+    position: relative;
+    background-size: cover;
+   width: 100px;
+   height: 100px;
+   /* border: 2px solid black; */
+   margin-left: 150px;
+   margin-top: 600px;
+   opacity: 0;
+   transform-style: preserve-3d;
+   transition: 0.5s ease;
+   
+}
+.notif1:hover{
+    opacity: 1;
+    transform: scale(2);
+}
+.notif2{
+    background: url(notif2.png);
+    position: relative;
+    background-size: cover;
+   width: 70px;
+   height: 70px;
+   /* border: 2px solid black; */
+   margin-left: 370px;
+   margin-top: -85px;
+   opacity: 0;
+   transition: 0.5s;
+   transform-style: flat;
+}
+.notif2:hover{
+    opacity: 1;
+    transform: rotate(360deg);
+    
+}
+
+.notif3{
+    background: url(notif3.png);
+    position: relative;
+    background-size: cover;
+   width: 100px;
+   height: 50px;
+   /* border: 2px solid black; */
+   margin-left: 150px;
+   margin-top: -570px;
+   opacity: 0;
+   transition: 0.5s;
+   transform-style: flat;
+}
+.notif3:hover{
+    opacity: 1;
+    transform:scale(4);
+}
+.notif4{
+    background: url(notif4.png);
+    position: relative;
+    background-size: cover;
+   width: 250px;
+   height: 250px;
+   /* border: 2px solid black; */
+   margin-left: 175px;
+   margin-top: 100px;
+   opacity: 0;
+   transition: 0.5s;
+   transform-style: initial;
+}
+.notif4:hover{
+    opacity: 1;
+    transform: scale(1.5);
+    transform: rotateY(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
